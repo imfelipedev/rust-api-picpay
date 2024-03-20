@@ -1,0 +1,13 @@
+[package]
+name = "rust-api-picpay"
+version = "0.1.0"
+edition = "2021"
+authors = ["zFelpszada"]
+
+[dependencies]
+axum = "0.7.4"
+dotenvy = "0.15.7"
+reqwest = { version = "0.11.27", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+sqlx = { version = "0.7.4", features = ["runtime-tokio-rustls", "postgres", "bigdecimal"] }
+tokio = { version = "1.36.0", features = ["full"] }
